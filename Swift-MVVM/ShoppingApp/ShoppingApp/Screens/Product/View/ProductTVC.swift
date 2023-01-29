@@ -12,12 +12,9 @@ class ProductTVC: UITableViewCell {
     @IBOutlet weak var productCellBG: UIView!
     @IBOutlet weak var productImage: UIImageView!
     @IBOutlet weak var productTitle: UILabel!
-    
     @IBOutlet weak var productRate: UIButton!
     @IBOutlet weak var productSubTitle: UILabel!
-    
     @IBOutlet weak var productDescription: UILabel!
-    
     @IBOutlet weak var productPrice: UILabel!
     
     var product: Product?
@@ -31,6 +28,12 @@ class ProductTVC: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        productCellBG.layer.cornerRadius = 5
+        productCellBG.backgroundColor = .systemGray6
+        
+        
+        productImage.layer.cornerRadius = 10
+        productImage.clipsToBounds = true
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -52,7 +55,6 @@ class ProductTVC: UITableViewCell {
         productSubTitle.text = product?.category
         productDescription.text = product?.description
         productImage.setImage(urlString: product!.image)
-        productImage.layer.cornerRadius = 10
-        productImage.clipsToBounds = true
+      
     }
 }
