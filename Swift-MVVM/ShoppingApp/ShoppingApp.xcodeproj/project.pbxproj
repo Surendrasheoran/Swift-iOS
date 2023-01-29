@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED31F59E2986BACC007FB739 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED31F59D2986BACC007FB739 /* Utility.swift */; };
 		EDDE8EE3298554C50080A2C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDE8EE2298554C50080A2C4 /* AppDelegate.swift */; };
 		EDDE8EE5298554C50080A2C4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDE8EE4298554C50080A2C4 /* SceneDelegate.swift */; };
 		EDDE8EEA298554C50080A2C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDDE8EE8298554C50080A2C4 /* Main.storyboard */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		ED31F59D2986BACC007FB739 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		EDDE8EDF298554C50080A2C4 /* ShoppingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShoppingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDDE8EE2298554C50080A2C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDDE8EE4298554C50080A2C4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +55,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ED31F59C2986B9E7007FB739 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				ED31F59D2986BACC007FB739 /* Utility.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
 		EDDE8ED6298554C50080A2C4 = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +82,7 @@
 		EDDE8EE1298554C50080A2C4 /* ShoppingApp */ = {
 			isa = PBXGroup;
 			children = (
+				ED31F59C2986B9E7007FB739 /* Utility */,
 				EDDE8F05298556D00080A2C4 /* Resources */,
 				EDDE8F04298556BB0080A2C4 /* Storyboard */,
 				EDDE8EFF298556530080A2C4 /* Screens */,
@@ -256,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED31F59E2986BACC007FB739 /* Utility.swift in Sources */,
 				EDDE8F0929855CED0080A2C4 /* APIManager.swift in Sources */,
 				EDDE8F1229864AF70080A2C4 /* ProductTVC.swift in Sources */,
 				EDDE8EE3298554C50080A2C4 /* AppDelegate.swift in Sources */,

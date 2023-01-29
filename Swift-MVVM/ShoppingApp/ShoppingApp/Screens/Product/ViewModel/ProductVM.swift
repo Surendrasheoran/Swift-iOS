@@ -13,13 +13,14 @@ final class ProductVM
     var eventHandler: ((_ event: Event) -> Void)? // data binding
     
     func fetchProducts() {
-        Thread.sleep(forTimeInterval: 3)
         self.eventHandler?(.loading)
         
-            Thread.sleep(forTimeInterval: 3)
-        APIManager.shared.fetchProducts { response in
-            self.eventHandler?(.stopLoading)
-
+        APIManager.shared.request(
+            modelType: [Product].self,
+            type: EndPointItems.products) {
+                response in
+                self.eventHandler?(.stopLoading)
+                
                 switch response {
                 case .success(let products):
                     self.products = products
@@ -27,7 +28,7 @@ final class ProductVM
                 case .failure(let error):
                     self.eventHandler?(.error(error))
                 }
-        }
+            }
     }
 }
 
